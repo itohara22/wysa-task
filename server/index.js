@@ -1,11 +1,16 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
+// require("dotenv").config();
+import dotenv from "dotenv";
+
+dotenv.config();
 
 import { SleepData } from "./models/sleepData.js";
 
+const url = process.env.MONGO;
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/wysa");
+  await mongoose.connect(url);
 }
 
 main()
