@@ -1,0 +1,25 @@
+Post http://localhost:3000/1
+Content-Type: application/json
+
+{"affectPeriod":22}
+
+###########
+Post http://localhost:3000/2
+Content-Type: application/json
+
+{"bedIn":10}
+
+
+######
+Post http://localhost:3000/3
+Content-Type: application/json
+
+{"bedOut":9}
+
+
+
+######
+Post http://localhost:3000/4
+Content-Type: application/json
+
+{"sleepTime":9}
